@@ -1,0 +1,149 @@
+/* Importar fuente personalizada */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de navegación: Personalización de la marca */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Ajustar Carrusel en Todas las Pantallas */
+.carousel-item img {
+  width: 100vw;
+  height: 85vh; 
+  object-fit: cover; 
+  display: block;
+}
+
+/* Para Dispositivos Móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 60vh; 
+    object-fit: cover; 
+  }
+  
+  h2 {
+    font-size: 1.5rem; 
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem; 
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Para Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 1.8rem; 
+  }
+  
+  .container {
+    max-width: 90%; 
+  }
+}
+
+/*  Para Escritorio (más de 1024px) */
+@media (min-width: 1025px) {
+  .carousel-item img {
+    height: 85vh; 
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .container {
+    max-width: 1200px; 
+  }
+}
+
+
+/* Secciones: */
+section h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Tarjetas de la sección de Programación */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes de las tarjetas: */
+.card-img-top {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Galería:*/
+#galeria img {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+#galeria img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer: */
+footer {
+  background-color: #222;
+  color: #bbb;
+  font-size: 0.9rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #bbb;
+  transition: color 0.3s ease;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
